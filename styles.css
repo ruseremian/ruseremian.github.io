@@ -1,0 +1,99 @@
+/* Réinitialisation des styles de base */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 10px;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 3px solid #444;
+}
+
+/* Introduction */
+#introduction {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Sections principales */
+section {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Titres des sections */
+section h2 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Expérience professionnelle, formation, compétences */
+section div {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+section h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Portfolio */
+#portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#portfolio li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ddd;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
