@@ -1,0 +1,110 @@
+/* Réinitialisation CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Polices Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 16px;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    background: #222;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Barre de navigation verticale */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    padding: 1rem;
+}
+
+#sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Sections */
+.full-screen-section {
+    margin-left: 250px;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact */
+#contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    margin-left: 250px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .full-screen-section {
+        margin-left: 0;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+}
