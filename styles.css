@@ -44,6 +44,12 @@ header p, .about-me p {
     font-size: 1.5rem;
 }
 
+#dynamic-text {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 /* Navigation Bar */
 #navbar {
     text-align: center;
