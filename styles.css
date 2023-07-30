@@ -60,6 +60,10 @@ header p, .about-me p {
     left: 0; /* Move it on-screen when hovered */
 }
 
+#sidebar.expanded {
+    left: 0;
+}
+
 #sidebar ul {
     list-style: none;
     display: flex;
