@@ -119,10 +119,9 @@ ul li {
 /* Footer */
 footer {
     padding: 1rem;
-    background: #f4f4f4;
+    background: none;
     color: #5130B0;
     text-align: center;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
