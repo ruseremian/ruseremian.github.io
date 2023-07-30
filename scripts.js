@@ -12,16 +12,13 @@ AOS.init({
     duration: 1200, // You can adjust the animation duration here
 });
 
-var i = 0;
-var txt = 'Hello, I\'m Ruslan';
-var speed = 150;
+const dynamicText = document.getElementById('dynamic-text');
+const text = ["Hello, I'm Ruslan!", "Welcome to my website!", "I'm a Data Analyst!", "Let's explore my work!"];
+let i = 0;
 
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("dynamic-text").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
+function changeText() {
+    dynamicText.innerHTML = text[i];
+    i = (i + 1) % text.length;
 }
 
-window.onload = typeWriter;
+setInterval(changeText, 2000); // Change text every 2 seconds
