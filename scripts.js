@@ -13,7 +13,7 @@ AOS.init({
 });
 
 const dynamicText = document.getElementById('dynamic-text');
-const text = ["Hello, I'm Ruslan!", "Welcome to my website!", "I'm a Data Analyst!", "Let's explore my work!"];
+const text = ["Hello, I'm Ruslan!", "Welcome to my website!", "Let's explore my work!"];
 let i = 0;
 let isAdding = true;
 let currentText = "";
@@ -40,3 +40,6 @@ function changeText() {
 }
 
 changeText();
+
+// Initializing AOS
+AOS.init();
