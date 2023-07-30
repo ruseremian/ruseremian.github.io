@@ -48,11 +48,16 @@ header p, .about-me p {
 #sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -200px; /* Move it off-screen */
     width: 250px;
     height: 100%;
     background: #333;
     padding: 1rem;
+    transition: left 0.3s; /* Animate it into view */
+}
+
+#sidebar:hover {
+    left: 0; /* Move it on-screen when hovered */
 }
 
 #sidebar ul {
