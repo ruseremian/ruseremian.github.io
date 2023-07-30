@@ -10,14 +10,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #fff;
-    background: #333;
+    background: #0b0f19;
     font-size: 16px;
 }
 
 header {
     padding: 2rem;
     text-align: center;
-    background: #333;
+    background: #0b0f19;
     color: #fff;
     height: 100vh;
 }
@@ -73,7 +73,7 @@ header p, .about-me p {
     margin-left: 250px;
     padding: 2rem;
     min-height: 100vh;
-    background: #333;
+    background: #0b0f19;
     color: #fff;
 }
 
@@ -109,7 +109,7 @@ ul li {
 /* Footer */
 footer {
     padding: 1rem;
-    background: #333;
+    background: #0b0f19;
     color: #fff;
     text-align: center;
     width: 100%;
