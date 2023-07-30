@@ -9,16 +9,15 @@
 body {
     font-family: 'Montserrat', sans-serif; /* change Roboto to Montserrat */
     line-height: 1.6;
-    color: #333;
-    font-size: 16px;
-    background: #f4f4f4;
+    color: #fff;
+    background: #333;
 }
 
 header {
     padding: 2rem;
     text-align: center;
-    background: #f4f4f4;
-    color: #333;
+    background: #333;
+    color: #fff;
     height: 100vh; /* take up the whole height of the screen */
 }
 
