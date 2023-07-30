@@ -120,7 +120,7 @@ ul li {
 /* Footer */
 footer {
     padding: 1rem;
-    background: linear-gradient(to right, #A8337C, #5130B0);
+    background: linear-gradient(to right, #5130B0, #A8337C);
     color: #fff;
     text-align: center;
     position: fixed;
