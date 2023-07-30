@@ -32,4 +32,32 @@ window.onload = function() {
     AOS.init({
         duration: 1200, // You can adjust the animation duration here
     });
+
+    const sections = document.querySelectorAll('.full-screen-section');
+    let currentSectionIndex = 0;
+
+    window.addEventListener('wheel', function(event) {
+        // Check the direction of the scroll
+        if (event.deltaY > 0) {
+            // The user scrolled down
+            currentSectionIndex++;
+            if (currentSectionIndex >= sections.length) {
+                // Don't scroll past the last section
+                currentSectionIndex = sections.length - 1;
+            }
+        } else {
+            // The user scrolled up
+            currentSectionIndex--;
+            if (currentSectionIndex < 0) {
+                // Don't scroll past the first section
+                currentSectionIndex = 0;
+            }
+        }
+
+        // Scroll to the current section
+        sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+
+        // Prevent the default scroll behavior
+        event.preventDefault();
+    }, { passive: false });  // Important to make preventDefault work
 }
