@@ -18,7 +18,7 @@ header {
     padding: 2rem;
     text-align: center;
     background: #f4f4f4; /* or #f4f4f4 to match the body background color */
-    color: #fff;
+    color: #333;
 }
 
 header .container {
