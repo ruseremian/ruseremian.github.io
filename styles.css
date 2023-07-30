@@ -154,6 +154,7 @@ footer p {
 .about-me {
     flex: 1;
     padding-left: 50px;
+    text-align: justify;
 }
 
 
