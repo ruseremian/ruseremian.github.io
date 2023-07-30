@@ -17,7 +17,7 @@ body {
 header {
     padding: 2rem;
     text-align: center;
-    background: #222;
+    background: none; /* or #f4f4f4 to match the body background color */
     color: #fff;
 }
 
@@ -143,6 +143,7 @@ footer p {
 .header {
     display: flex;
     justify-content: space-between;
+    height: 100vh; /* takes up the whole height of the screen */
 }
 
 .profile {
@@ -154,7 +155,6 @@ footer p {
     flex: 1;
     padding-left: 50px;
 }
-
 
 
 
