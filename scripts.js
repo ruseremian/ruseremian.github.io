@@ -23,7 +23,7 @@ window.onload = function() {
             }
         }
         dynamicText.innerHTML = currentText;
-        setTimeout(changeText, isAdding ? 100 : 50); // Slower when adding characters, faster when backspacing
+        setTimeout(changeText, isAdding ? 50 : 25); // Slower when adding characters, faster when backspacing
     }
 
     changeText();
