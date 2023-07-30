@@ -11,3 +11,17 @@ sidebar.addEventListener('mouseout', function() {
 AOS.init({
     duration: 1200, // You can adjust the animation duration here
 });
+
+var i = 0;
+var txt = 'Hello, I\'m Ruslan';
+var speed = 150;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("dynamic-text").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
+window.onload = typeWriter;
