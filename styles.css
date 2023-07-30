@@ -56,12 +56,9 @@ header p, .about-me p {
     transition: left 0.3s; /* Animate it into view */
 }
 
-#sidebar:hover {
-    left: 0; /* Move it on-screen when hovered */
-}
-
+#sidebar:hover,
 #sidebar.expanded {
-    left: 0;
+    left: 0; /* Move it on-screen when hovered */
 }
 
 #sidebar ul {
