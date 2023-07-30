@@ -92,6 +92,22 @@ window.onload = function() {
         event.preventDefault();
     }, { passive: false });  // Important to make preventDefault work
 
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top").style.display = "block";
+    } else {
+        document.getElementById("back-to-top").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+document.getElementById('back-to-top').addEventListener('click', function(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+    
     // Rest of your particlesJS code...
 
 particlesJS('particles-js',
