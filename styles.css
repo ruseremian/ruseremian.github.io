@@ -51,7 +51,7 @@ header p, .about-me p {
     left: -200px; /* Move it off-screen */
     width: 250px;
     height: 100%;
-    background: #333;
+    background: linear-gradient(to bottom, #A8337C, #5130B0);
     padding: 1rem;
     transition: left 0.3s; /* Animate it into view */
 }
@@ -118,10 +118,9 @@ ul li {
 }
 
 /* Footer */
-/* Footer */
 footer {
     padding: 1rem;
-    background: #333; /* same color as the sidebar */
+    background: linear-gradient(to right, #A8337C, #5130B0);
     color: #fff;
     text-align: center;
     position: fixed;
