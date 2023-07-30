@@ -17,8 +17,9 @@ body {
 header {
     padding: 2rem;
     text-align: center;
-    background: #f4f4f4; /* or #f4f4f4 to match the body background color */
+    background: #f4f4f4;
     color: #333;
+    height: 100vh; /* take up the whole height of the screen */
 }
 
 header .container {
@@ -29,18 +30,18 @@ header .container {
 header img {
     border-radius: 50%;
     margin-bottom: 1rem;
-    width: 150px;
-    height: 150px;
+    width: 200px; /* increase the size of profile image */
+    height: 200px; /* increase the size of profile image */
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem; /* increase the size of the name */
     margin-bottom: 0.5rem;
 }
 
-header p {
-    font-size: 1.25rem;
+header p, .about-me p {
+    font-size: 1.5rem; /* increase the size of the role and about me text */
 }
 
 /* Barre de navigation verticale */
@@ -155,6 +156,9 @@ footer p {
     flex: 1;
     padding-left: 50px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center the about me content */
 }
 
 
