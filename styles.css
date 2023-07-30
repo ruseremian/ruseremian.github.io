@@ -26,6 +26,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    position: relative;
+    z-index: 2;
 }
 
 header img {
@@ -48,6 +50,7 @@ header p, .about-me p {
     color: #fff;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    min-height: 20px; /* Adjust this value to fit your design */
 }
 
 /* Navigation Bar */
@@ -144,10 +147,5 @@ footer p {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
-
-.profile {
-    position: relative;
-    z-index: 2;
 }
 
