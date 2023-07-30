@@ -27,13 +27,13 @@ window.onload = function() {
     }
 
     changeText();
-    
+
     // Initializing AOS
     AOS.init({
         duration: 1200, // You can adjust the animation duration here
     });
 
-  const sections = [document.querySelector('header')].concat(Array.from(document.querySelectorAll('.full-screen-section')));
+    const sections = [document.querySelector('header')].concat(Array.from(document.querySelectorAll('.full-screen-section')));
     let currentSectionIndex = 0;
 
     window.addEventListener('wheel', function(event) {
@@ -60,7 +60,39 @@ window.onload = function() {
         // Prevent the default scroll behavior
         event.preventDefault();
     }, { passive: false });  // Important to make preventDefault work
-}
+
+    window.addEventListener('keydown', function(event) {
+        // Check the key code of the pressed key
+        switch (event.keyCode) {
+            case 38:  // Up arrow
+                // The user pressed the up arrow, scroll up
+                currentSectionIndex--;
+                if (currentSectionIndex < 0) {
+                    // Don't scroll past the first section
+                    currentSectionIndex = 0;
+                }
+                break;
+            case 40:  // Down arrow
+                // The user pressed the down arrow, scroll down
+                currentSectionIndex++;
+                if (currentSectionIndex >= sections.length) {
+                    // Don't scroll past the last section
+                    currentSectionIndex = sections.length - 1;
+                }
+                break;
+            default:
+                // The user pressed a key that we're not interested in
+                return;
+        }
+
+        // Scroll to the current section
+        sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+
+        // Prevent the default scroll behavior
+        event.preventDefault();
+    }, { passive: false });  // Important to make preventDefault work
+
+    // Rest of your particlesJS code...
 
 particlesJS('particles-js',
   {
