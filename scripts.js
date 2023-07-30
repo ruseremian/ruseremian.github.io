@@ -33,7 +33,7 @@ window.onload = function() {
         duration: 1200, // You can adjust the animation duration here
     });
 
-    const sections = document.querySelectorAll('.full-screen-section');
+  const sections = [document.querySelector('header')].concat(Array.from(document.querySelectorAll('.full-screen-section')));
     let currentSectionIndex = 0;
 
     window.addEventListener('wheel', function(event) {
