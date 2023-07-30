@@ -138,3 +138,10 @@ footer p {
         min-height: auto;
     }
 }
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
