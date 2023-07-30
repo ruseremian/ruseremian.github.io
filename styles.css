@@ -119,8 +119,8 @@ ul li {
 /* Footer */
 footer {
     padding: 1rem;
-    background: linear-gradient(to left, #5130B0, #A8337C);
-    color: #fff;
+    background: #f4f4f4;
+    color: #5130B0;
     text-align: center;
     position: fixed;
     width: 100%;
