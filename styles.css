@@ -26,6 +26,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    z-index: 2;  /* Set z-index higher than particles */
+    position: relative;  /* Enable z-index */
 }
 
 header img {
@@ -55,6 +57,8 @@ header p, .about-me p {
 #navbar {
     text-align: center;
     padding: 1rem;
+    z-index: 2;  /* Set z-index higher than particles */
+    position: relative;  /* Enable z-index */
 }
 
 #navbar ul {
@@ -141,7 +145,7 @@ footer p {
 }
 
 #particles-js {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
